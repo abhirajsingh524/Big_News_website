@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizNews</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/easing/easing.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.theme.default.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.theme.green.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.theme.green.min.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <span>Monday, January 1, 2045</span>
+                <div class="top-links">
+                    <a href="#">Advertise</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>BizNews</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Single News</a></li>
+                <li class="dropdown">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Menu item 1</a></li>
+                        <li><a href="#">Menu item 2</a></li>
+                        <li><a href="#">Menu item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-8">
+                <!-- Top Stories -->
+                <section class="top-stories">
+                    <div class="story-large">
+                        <img src="{{ url_for('static', filename='img/news-800x500-1.jpg') }}" alt="News">
+                        <div class="story-info">
+                            <span class="category">Business</span>
+                            <span class="date">Jan 01, 2045</span>
+                        </div>
+                        <h3>Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</h3>
+                    </div>
+                    <div class="story-grid">
+                        <div class="story-item">
+                            <img src="{{ url_for('static', filename='img/news-700x435-1.jpg') }}" alt="News">
+                            <div class="story-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</h4>
+                        </div>
+                        <div class="story-item">
+                            <img src="{{ url_for('static', filename='img/news-700x435-2.jpg') }}" alt="News">
+                            <div class="story-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</h4>
+                        </div>
+                        <div class="story-item">
+                            <img src="{{ url_for('static', filename='img/news-700x435-3.jpg') }}" alt="News">
+                            <div class="story-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet elit...</h4>
+                        </div>
+                        <div class="story-item">
+                            <img src="{{ url_for('static', filename='img/news-700x435-4.jpg') }}" alt="News">
+                            <div class="story-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet elit...</h4>
+                        </div>
+                        <div class="story-item">
+                            <img src="{{ url_for('static', filename='img/news-700x435-5.jpg') }}" alt="News">
+                            <div class="story-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet elit...</h4>
+                        </div>
+                        <div class="story-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div class="story-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <h4>Lorem ipsum dolor sit amet elit...</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Breaking News -->
+                <section class="breaking-news">
+                    <h2>Breaking News</h2>
+                    <div class="news-item">
+                        <p>Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales</p>
+                    </div>
+                    <div class="news-item">
+                        <p>Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales</p>
+                    </div>
+                </section>
+
+                <!-- Featured News -->
+                <section class="featured-news">
+                    <h2>Featured News</h2>
+                    <div class="news-grid">
+                        <div class="news-card">
+                            <img src="{{ url_for('static', filename='img/news-700x435-1.jpg') }}" alt="News">
+                            <div class="card-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet elit...</p>
+                        </div>
+                        <div class="news-card">
+                            <img src="{{ url_for('static', filename='img/news-700x435-2.jpg') }}" alt="News">
+                            <div class="card-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet elit...</p>
+                        </div>
+                        <div class="news-card">
+                            <img src="{{ url_for('static', filename='img/news-700x435-3.jpg') }}" alt="News">
+                            <div class="card-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet elit...</p>
+                        </div>
+                        <div class="news-card">
+                            <img src="{{ url_for('static', filename='img/news-700x435-4.jpg') }}" alt="News">
+                            <div class="card-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet elit...</p>
+                        </div>
+                        <div class="news-card">
+                            <img src="{{ url_for('static', filename='img/news-700x435-5.jpg') }}" alt="News">
+                            <div class="card-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet elit...</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Latest News -->
+                <section class="latest-news">
+                    <div class="section-header">
+                        <h2>Latest News</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    
+                    <div class="news-list">
+                        <article class="news-article-large">
+                            <img src="{{ url_for('static', filename='img/news-800x500-1.jpg') }}" alt="News">
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <h3>Lorem ipsum dolor sit amet elit...</h3>
+                                <p>Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo</p>
+                                <div class="article-footer">
+                                    <span class="author">John Doe</span>
+                                    <span class="views">12345</span>
+                                    <span class="comments">123</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-article-large">
+                            <img src="{{ url_for('static', filename='img/news-800x500-2.jpg') }}" alt="News">
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <h3>Lorem ipsum dolor sit amet elit...</h3>
+                                <p>Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo</p>
+                                <div class="article-footer">
+                                    <span class="author">John Doe</span>
+                                    <span class="views">12345</span>
+                                    <span class="comments">123</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-article-small">
+                            <img src="{{ url_for('static', filename='img/news-700x435-1.jpg') }}" alt="News">
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <h4>Lorem ipsum dolor sit amet elit...</h4>
+                                <div class="article-footer">
+                                    <span class="author">John Doe</span>
+                                    <span class="views">12345</span>
+                                    <span class="comments">123</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-article-small">
+                            <img src="{{ url_for('static', filename='img/news-700x435-2.jpg') }}" alt="News">
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <h4>Lorem ipsum dolor sit amet elit...</h4>
+                                <div class="article-footer">
+                                    <span class="author">John Doe</span>
+                                    <span class="views">12345</span>
+                                    <span class="comments">123</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="news-row">
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-700x435-3.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-700x435-4.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-700x435-5.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-800x500-1.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                        </div>
+
+                        <article class="news-article-large">
+                            <img src="{{ url_for('static', filename='img/news-800x500-2.jpg') }}" alt="News">
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <h3>Lorem ipsum dolor sit amet elit...</h3>
+                                <p>Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo</p>
+                                <div class="article-footer">
+                                    <span class="author">John Doe</span>
+                                    <span class="views">12345</span>
+                                    <span class="comments">123</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="news-row">
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-800x500-3.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-700x435-1.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-700x435-2.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                            <div class="news-card-small">
+                                <img src="{{ url_for('static', filename='img/news-700x435-3.jpg') }}" alt="News">
+                                <div class="card-info">
+                                    <span class="category">Business</span>
+                                    <span class="date">Jan 01, 2045</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside class="col-lg-4">
+                <!-- Social Follow -->
+                <div class="widget social-widget">
+                    <h3>Follow Us</h3>
+                    <div class="social-stats">
+                        <div class="social-item facebook">
+                            <span class="count">12,345</span>
+                            <span class="label">Fans</span>
+                        </div>
+                        <div class="social-item twitter">
+                            <span class="count">12,345</span>
+                            <span class="label">Followers</span>
+                        </div>
+                        <div class="social-item linkedin">
+                            <span class="count">12,345</span>
+                            <span class="label">Connects</span>
+                        </div>
+                        <div class="social-item instagram">
+                            <span class="count">12,345</span>
+                            <span class="label">Followers</span>
+                        </div>
+                        <div class="social-item youtube">
+                            <span class="count">12,345</span>
+                            <span class="label">Subscribers</span>
+                        </div>
+                        <div class="social-item vimeo">
+                            <span class="count">12,345</span>
+                            <span class="label">Followers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advertisement -->
+                <div class="widget ad-widget">
+                    <h3>Advertisement</h3>
+                    <img src="{{ url_for('static', filename='img/user.jpg') }}" alt="Advertisement">
+                </div>
+
+                <!-- Trending News -->
+                <div class="widget trending-widget">
+                    <h3>Trending News</h3>
+                    <div class="trending-list">
+                        <div class="trending-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div class="trending-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div class="trending-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div class="trending-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div class="trending-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div class="trending-info">
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="widget newsletter-widget">
+                    <h3>Newsletter</h3>
+                    <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                    <form>
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+
+                <!-- Tags -->
+                <div class="widget tags-widget">
+                    <h3>Tags</h3>
+                    <div class="tags">
+                        <a href="#" class="tag">Politics</a>
+                        <a href="#" class="tag">Business</a>
+                        <a href="#" class="tag">Corporate</a>
+                        <a href="#" class="tag">Business</a>
+                        <a href="#" class="tag">Health</a>
+                        <a href="#" class="tag">Education</a>
+                        <a href="#" class="tag">Science</a>
+                        <a href="#" class="tag">Business</a>
+                        <a href="#" class="tag">Foods</a>
+                        <a href="#" class="tag">Travel</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Lorem ipsum dolor sit amet elit</h4>
+                    <div class="contact-info">
+                        <h5>Get In Touch</h5>
+                        <p>123 Street, New York, USA</p>
+                        <p>+012 345 67890</p>
+                        <p>info@example.com</p>
+                    </div>
+                    <div class="social-links">
+                        <h5>Follow Us</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Popular News</h4>
+                    <div class="footer-news">
+                        <div class="footer-news-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div>
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</p>
+                            </div>
+                        </div>
+                        <div class="footer-news-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div>
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</p>
+                            </div>
+                        </div>
+                        <div class="footer-news-item">
+                            <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="News">
+                            <div>
+                                <span class="category">Business</span>
+                                <span class="date">Jan 01, 2045</span>
+                                <p>Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="categories-list">
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Corporate</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Foods</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Corporate</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Foods</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Flickr Photos</h4>
+                    <div class="flickr-photos">
+                        <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="Photo">
+                        <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="Photo">
+                        <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="Photo">
+                        <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="Photo">
+                        <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="Photo">
+                        <img src="{{ url_for('static', filename='img/news-110x110-5.jpg') }}" alt="Photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Your Site Name. All Rights Reserved. Designed by HTML Codex</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+</body>
+</html>
